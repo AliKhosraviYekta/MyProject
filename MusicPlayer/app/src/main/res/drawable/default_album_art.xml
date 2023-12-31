@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- وضعیت هنگامی که ویجت فعال است -->
+    <item android:drawable="@drawable/music_bk" android:state_enabled="true" />
+
+
+    <!-- وضعیت پیش‌فرض -->
+    <item android:drawable="@drawable/music_bk_two" />
+
+</selector>
