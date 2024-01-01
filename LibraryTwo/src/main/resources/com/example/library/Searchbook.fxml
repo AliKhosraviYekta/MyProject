@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="689.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.SearchBook">
+   <children>
+      <TableView fx:id="table1" layoutX="125.0" layoutY="116.0" onSort="#tableVIEWBOOK" prefHeight="317.0" prefWidth="451.0">
+         <columns>
+            <TableColumn fx:id="column1" prefWidth="88.0" text="نام کتاب" />
+            <TableColumn fx:id="column2" text="نویسنده" />
+            <TableColumn fx:id="column3" prefWidth="72.0" text="ناشر" />
+            <TableColumn fx:id="column4" prefWidth="72.0" text="تاریخ انتشار" />
+            <TableColumn fx:id="column5" prefWidth="111.0" text="ژانر" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="textFIELD2" alignment="CENTER_RIGHT" layoutX="113.0" layoutY="61.0" promptText="نام نویسنده" unFocusColor="AQUA" />
+      <JFXTextField fx:id="textFIELD1" alignment="CENTER_RIGHT" layoutX="459.0" layoutY="61.0" promptText="نام کتاب" unFocusColor="AQUA" />
+      <JFXButton fx:id="button1" buttonType="RAISED" layoutX="121.0" layoutY="455.0" onAction="#searchBUTTON" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: #14e36a;" text="جستجوی کتاب" textFill="#f8f8f8">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20" wrappingWidth="18.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="button2" buttonType="RAISED" layoutX="465.0" layoutY="456.0" onAction="#exitBUTTON" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: #abd1bb;" text="خروج" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUG" size="20" />
+         </graphic>
+      </JFXButton>
+      <FontAwesomeIconView fill="#abd1bb" glyphName="BOOK" layoutX="432.0" layoutY="95.0" size="20" />
+      <FontAwesomeIconView fill="#14e36a" glyphName="PENCIL" layoutX="84.0" layoutY="95.0" size="20" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="613.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.RegisterUser">
+   <children>
+      <JFXTextField fx:id="textfield1" alignment="CENTER_RIGHT" focusColor="#2fff00" layoutX="393.0" layoutY="47.0" onAction="#namefield" promptText="نام" unFocusColor="BLUE" />
+      <JFXButton fx:id="button1" buttonType="RAISED" layoutX="160.0" layoutY="361.0" onAction="#registerBUTTON" prefHeight="40.0" prefWidth="79.0" style="-fx-background-color: cyan;" text="ثبت">
+         <graphic>
+            <FontAwesomeIconView fill="#f2f2f2" glyphName="CHECK" selectionFill="#da0f0f" size="20" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="button2" buttonType="RAISED" layoutX="380.0" layoutY="361.0" onAction="#exitButton" prefHeight="40.0" prefWidth="79.0" style="-fx-background-color: orange;" text="خروج">
+         <graphic>
+            <FontAwesomeIconView fill="#f8f8f8" glyphName="SIGN_OUT" size="20" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="textfield2" alignment="CENTER_RIGHT" focusColor="#2fff00" layoutX="78.0" layoutY="53.0" onAction="#familyfield" promptText="نام خانوادگی" unFocusColor="BLUE" />
+      <JFXTextField fx:id="textfield3" alignment="CENTER_RIGHT" focusColor="#2fff00" layoutX="392.0" layoutY="138.0" onAction="#nationalidfield" promptText="کد ملی" unFocusColor="BLUE" />
+      <JFXTextField fx:id="textfield4" alignment="CENTER_RIGHT" focusColor="#2fff00" layoutX="79.0" layoutY="139.0" onAction="#idcardfield" promptText="کد عضویت" unFocusColor="BLUE" />
+      <JFXTextField fx:id="textfield5" alignment="CENTER_RIGHT" focusColor="#2fff00" layoutX="392.0" layoutY="224.0" onAction="#phonenumberfield" promptText="شماره تماس" unFocusColor="BLUE" />
+      <JFXTextField fx:id="textfield6" alignment="CENTER_RIGHT" focusColor="#2fff00" layoutX="79.0" layoutY="224.0" onAction="#datefield" promptText="تاریخ تولد" unFocusColor="BLUE" />
+      <JFXTextField fx:id="textfield7" alignment="CENTER_RIGHT" focusColor="#2fff00" layoutX="245.0" layoutY="301.0" onAction="#addressfield" promptText="آدرس" unFocusColor="BLUE" />
+      <FontAwesomeIconView glyphName="USER" layoutX="368.0" layoutY="80.0" size="18" />
+      <FontAwesomeIconView glyphName="ID_BADGE" layoutX="367.0" layoutY="170.0" size="18" />
+      <FontAwesomeIconView glyphName="PHONE" layoutX="365.0" layoutY="257.0" size="18" />
+      <FontAwesomeIconView glyphName="USERS" layoutX="50.0" layoutY="86.0" size="18" />
+      <FontAwesomeIconView glyphName="ID_CARD" layoutX="49.0" layoutY="172.0" size="18" />
+      <FontAwesomeIconView glyphName="CALENDAR" layoutX="52.0" layoutY="256.0" size="18" />
+      <FontAwesomeIconView glyphName="HOME" layoutX="222.0" layoutY="334.0" size="18" />
+   </children>
+</AnchorPane>
